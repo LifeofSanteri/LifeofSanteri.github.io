@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>workofsanteri - WhatsApp Case Study</title>
+    <link rel="stylesheet" href="stylew.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div onclick="location.href='index.html'" class="logo">workofsanteri</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    <nav id="hamburger-nav">
+        <div onclick="location.href='index.html'" class="logo">workofsanteri</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="section1" class="wsection" title="Section 1" container="container1">
+        <h1 class="title">WhatsApp Groups</h1>
+        <h3>What is this about?</h3>
+        <p class="text">
+            In this project, we focused on WhatsApp group chats, particularly on the 
+            management of old and inactive groups. Our goal was to gather user experiences
+             and identify potential issues they encounter when it comes to preserving and
+              managing groups within the application. Our aim was to identify how we could
+               improve the manageability of groups and determine whether inactive groups 
+               are perceived as problematic.</p>
+    </section>
+    <section id="section2" class="wsection" title="Section 2" container="container1">
+        <h1 class="title">Defining Project Goals</h1>
+        <div class="goals-container">
+
+           <div class="goal-container">
+                <h2>1.</h2>
+                <p>  Investigate the shortcomings related to preserving groups in the WhatsApp application.</p>
+            </div>
+
+            <div class="goal-container">
+                <h2>2.</h2>
+                <p> Propose potential enhancements to the group management process.</p>
+            </div>
+            
+            
+            <div class="goal-container">
+           <h2>3.</h2>
+           <p> Survey user opinions and experiences concerning inactive groups and their potential negative impact.</p>
+            </div>
+
+        </div>
+             <p class="text">   
+            These objectives guided our research process, allowing us to refer back to them as the study 
+            progressed. Clarifying these objectives enables the improvement of the user experience in the 
+            WhatsApp application, particularly in preserving older groups.</p>
+    </section>
+    <section id="section3" class="wsection" title="Section 3" container="container1">
+        <h1 class="title">User Research</h1>
+
+    <div class="users-container">
+        <div class="user-container">
+        <h3>Surveys</h3>
+            <p class="text">
+                A total of 68 individuals participated in the survey. The survey was designed flexibly, with 
+                its length and questions varying based on respondents' preferences and experiences. The survey 
+                provided comprehensive insights into how users perceive inactive groups and their management.</p>
+        </div>
+
+        <div class="user-container">
+        <h3>Interviews</h3>
+            <p class="text">
+                We conducted interviews with 7 users to delve into their experiences and perspectives. 
+                The interviews were carried out using a semi-structured interview framework, allowing for 
+                flexible discussions. Transcriptions of the interviews were compiled. Our focus was to 
+                gain a deeper understanding of users' needs and desires.</p>
+        </div>
+
+        <div class="user-container">
+        <h3>Affinity Analysis</h3>
+            <p class="text">
+                We utilized affinity analysis to organize and categorize the data collected within our
+                team. This analysis helped us identify common themes and pain points, which guided the
+                refinement of our research and solutions.</p>
+        </div>
+         
+        <div class="user-container">
+        <h3>Personas</h3>
+            <p class="text">
+                Based on the interviews, we constructed four distinct user personas. 
+                These personas aimed to provide insights into the diverse needs and expectations of 
+                different users, including both younger and older individuals, and their ways of 
+                communicating with family and friends.</p>
+        </div>
+        
+        <div class="user-container">
+        <h3>User Journeys</h3>
+            <p class="text">
+                We described user journeys and touchpoints using Service Blueprints, which aided our understanding 
+                of how users interact with the WhatsApp application in various scenarios. These user journeys were 
+                instrumental in enhancing the user experience, particularly in managing inactive groups. <br></p>
+        </div>
+    </div>
+        
+    </section>
+    <section id="section4" class="wsection" title="Section 4" container="container1">
+        <h1 class="title">Problem Definition</h1>
+        <div class="problem">
+        <p class="text">
+            Users find inactive groups less problematic than group management challenges. The study reveals that <b>52.9% did not consider</b> inactive groups harmful, while 47.1% found them somewhat disturbing. Some users view inactive groups as a drawback but may not actively seek an easier removal solution. </p> <br><br>
+ 
+            <img src="kuvat/52.png" alt="1" class="image" width="250px">
+        
+        <p class="text">
+            Users find group management and navigation challenging. Research results suggest that <b>they desire better group management</b>. While most respondents actively use groups, they struggle with sorting and managing them, negatively impacting the user experience within the app.</p> <br><br>
+        </div>
+        <p class="text">
+            Users distinguish between apps offering diverse group management options. The study reveals that many <b>utilize different group messaging apps</b> and may <b class="not">not wish to transfer these features</b> to WhatsApp, indicating a preference for using various apps for distinct group needs.<br><br>
+
+            These user issues are crucial starting points for enhancing the WhatsApp group management experience. Users seek <b>more efficient group navigation</b> and improved management solutions. The planned enhancements and features are designed to meet these user needs and desires.</p>
+    </section>
+    <section id="section5" class="wsection" title="Section 5" container="container1">
+        <h1 class="title">Design and Implementation</h1>
+        <p class="design-text1">
+            The first step involved a thorough analysis of the app's interface, appearance, and functionalities<br><br>
+        </p>
+
+        <img src="kuvat/iPhone6.png" alt="1" class="ip6">
+
+        <p class="design-text">
+
+            <b class="not">In our design process,</b> we started by evaluating the current user interface and features of the WhatsApp app. Our aim was to develop solutions that not only met user needs but also seamlessly integrated with the existing app, ensuring natural and intuitive workflows.<br><br>
+        </p>
+
+           
+        <p class="design-text">
+            <b>During ideation,</b> we used diverse brainstorming methods to create new ideas and explore 
+            potential enhancements in group management and navigation. We outlined four different 
+            alternatives, focusing on simplicity and clarity to ensure users could naturally and 
+            effortlessly make use of them.<br><br>
+            <img src="kuvat/iphone7.png" alt="1" class="ip7" >
+
+            
+
+            <b class="not">In the implementation phase,</b> we transitioned from theory to practice by creating prototypes of our proposed solutions. We employed the Figma program for prototyping and design, developing a total of four <img src="kuvat/iphone8.png" alt="1" class="ip8" width="250px"> distinct prototypes, each with its unique workflow. These prototypes aimed to showcase how users could seamlessly navigate between different views and utilize new features.<br><br>
+
+ 
+            <b>We employed Figma to craft interactive prototypes,</b> demonstrating the practical functionality of the new features. Each prototype prioritized a seamless and intuitive user experience to ensure easy adoption of our solutions. Figma also streamlined teamwork collaboration, a crucial element for project success.</p>
+    </section>
+    <section id="section6" class="wsection" title="Section 6" container="container1">
+        <h1 class="title2">Testing</h1>
+        <div class="testing"> 
+        
+        <div class="ftext">
+            <p>The testing process involved four participants who independently completed tasks using Figma workflows. They were encouraged to 
+            <b>think out loud</b> and provide immediate feedback. The observer focused solely on recording their thoughts and actions.</p>
+            <img src="kuvat/1flow.png" alt="flow" class="flow">
+        </div>
+            <div class="flowei">
+            <img src="kuvat/flow.png" alt="flow" class="flowt">
+        </div>
+    </div>
+            
+        
+        
+        
+        <h3> From testing, two key ideas stood out</h3>
+        <div class="proto-container">
+            <div class="protos-container">
+                <h2>1. When creating a group, offering the option to set an expiration date for it</h2>
+                <img src="kuvat/proto2.gif" class="proto" alt="proto">
+            </div>
+
+            <div class="protos-container">
+                <h2>2. Separately categorizing groups from private messages</h2>
+                <img src="kuvat/proto5.gif" class="proto" alt="proto">
+            </div>
+
+
+        
+
+            
+            <p><b>*</b> We also received a valuable new development suggestion we hadn't considered before. <br>   &nbsp;&nbsp;  Changing inactive groups to gray to make them easier to notice and remove.</p>
+        </div>
+    </section>
+    <section id="section7" class="wsection" title="Section 7" container="container1">
+        <h1 class="title">Objectives</h1>
+        <div class="object">
+        <div class="objectives">
+        <h2>1. Identify shortcomings related to group retention in the WhatsApp application</h2>
+            <div class="objective">
+            <p class="text">
+            This objective was successfully achieved through survey research and interviews, 
+            which revealed the issues users face in group management and group inactivity. 
+            This allowed us to clearly identify the deficiencies experienced by users.</p>
+        </div>
+        </div>
+
+        <div class="objectives">
+            <h2>2. Propose possible improvements to the group management process</h2>
+            <div class="objective">
+            <p class="text">
+            This objective was achieved during the design phase, where we 
+            created four different prototypes with proposed solutions. 
+            These prototypes provided practical examples of how group management 
+            could be improved, with a particular focus on separating groups from 
+            private messages and setting expiration dates.</p>
+        </div>
+        </div>
+        
+        <div class="objectives">
+             <h2>3. Assess user experiences and concerns with inactive groups</h2>
+            <div class="objective">
+            <p class="text">
+                This goal was reached through a survey and concept scenario. User feedback indicated that inactive groups were seen as problematic in some cases, with a desire for improved management. The concept scenario allowed users to share opinions and suggest enhancements for group management.<br><br></p>
+            </div>
+        
+            </div>
+    </div>
+</div>
+
+
+            <p class="text">
+                The project <b>provided concrete solution proposals</b> that addressed the 
+                needs and desires of users. Specifically, the suggestions related to 
+                group management, such as separating groups from private messages and 
+                the option to set an expiration date when creating a group, received 
+                positive feedback and support. <br><br>
+                            
+                Additionally, the data collected from the project indicated that users' 
+                experiences with inactive groups are subjective, emphasizing the importance 
+                of offering diverse management options to cater to different user preferences.</p>
+    </section>
+    <section id="section8" class="wsection" title="Section 8" container="container1">
+        <h1 class="title">Lessons Learned</h1>
+        <h3>Lessons Learned</h3>
+        <div class="lessons">
+        <p class="text">
+            <b>User-Centered Design:</b> The project reinforced the importance of user-centered 
+            design. Understanding user needs and desires is crucial for successful product 
+            development projects.</p>
+
+        <p class="text">
+            <b>Survey Research and Interviews:</b> Creating surveys and 
+            conducting interviews proved to be effective tools for gathering user opinions 
+            and experiences. Combining these methods provided a comprehensive understanding 
+            of user needs.</p>
+
+        <p class="text">
+            <b>Prototype Creation:</b> Creating prototypes in Figma allowed 
+            for visualizing ideas and presenting them in practice. Prototypes worked well to show 
+            users how improvements could work.</p>
+
+        <p class="text">
+            <b> Affinity Analysis and User Personas:</b> These tools were 
+            used to organize data and identify common themes. User personas helped in understanding 
+            the diverse needs of different user groups.</p>
+
+        <p class="text">
+            <b>User Journey Mapping:</b> Using Service Blueprints helped understand how users interact 
+            with the application in different scenarios, aiding in designing improvements to the user 
+            experience.</p>
+
+        <p class="text">
+            <b>Testing:</b> Testing situations where observers monitored participants provided valuable 
+            feedback without unnecessary guidance. The test results helped distinguish effective solutions 
+            from those that didn't work.</p>
+        </div>
+        <div class="practices"> 
+        <div class="practice">
+        <h3>Effective Practices</h3>
+            <p>+ Survey research and interviews helped collect high-quality data on user opinions and needs.</p><br>
+            <p>+ Creating prototypes in Figma proved to be an efficient way to demonstrate improvements in practice</p><br>
+            <p>+ Testing situations with an observer provided impartial feedback.</p>
+        </div>
+        <div class="practice">
+        <h3>Ineffective Practices</h3>
+        <p>- The initial survey lacked in-depth questions for those who responded negatively.</p><br>
+        <p>- This information could have provided a deeper understanding of the reasons behind negative responses.
+            </p></div>
+        <div class="practice">
+        <h3>Suprises</h3> 
+        <p class="text">
+            * Users' experiences with inactive groups were diverse and subjective. Surprisingly, some 
+            users did not perceive them as harmful. <br><br>
+            * Valuable suggestions were obtained during testing that had not been considered, such as changing inactive groups to gray.</p>  
+        </div>
+        </div>
+    </section>
+    <section id="section9" class="wsection" title="Section 9" container="container1">
+        <div class="heading">
+        <h1 class="title">Follow-up Actions</h1>
+        <p class="text">
+            Although this project was fictional, it provided valuable information and 
+            suggestions for improving WhatsApp group management. If the project were to 
+            continue, the following steps could be considered.</p>
+        </div>
+            <div class="lessons2">
+        <p class="text">
+             <b>Practical Implementation:</b> The development team could use the 
+            obtained prototypes and suggestions as a foundation for designing and 
+            implementing new features. Practical application could allow users to experience 
+            the improvements firsthand.</p>
+
+        <p class="text">
+            <b>User Testing:</b> User testing of the new features is crucial. 
+            User feedback can help identify potential issues and make necessary adjustments 
+            to ensure seamless enhancements.</p>
+
+        <p class="text">
+            <b>Ongoing Updates:</b> Based on user feedback and analysis, features 
+            should be continuously updated and improved. Optimizing the user experience 
+            is an ongoing process, and new suggestions and ideas may arise as implemented 
+            features evolve.</p>
+
+        <p class="text">
+            <b>User Surveys and Monitoring:</b> Continuous surveys and feedback loops are 
+            important. They help keep a pulse on user satisfaction and ensure that users are 
+            content with the improvements made.</p>
+        </div>
+
+    </section>
+    <section id="section10" class="wsection" title="Section 10" container="container1">
+        <h1 class="title">Task Distribution</h1>
+        <div class="teamw">
+            <img src="kuvat/team.png" alt="team" width="100rem">
+            <p class="text">    For the success of the project, teamwork and strong collaboration were crucial. 
+            Each team member actively and equally participated in every phase as the project 
+            progressed. This diverse involvement allowed for a comprehensive understanding of 
+            the entire process and provided valuable experience in various stages. <br><br>
+        
+            I have included my own visual designs and user interfaces on the page.</p>
+        </div>
+            
+    </section>
+
+    <section id="section11" class="wsection" title="Section 11" container="container1">
+        <h1 class="title">Conclusion</h1>
+        <div class="conclusion">
+        <p class="text">In this user research, the focus was on WhatsApp group management, especially with old and inactive groups. The goal was to understand <b>user experiences</b> and potential issues, leading to solution proposals that meet user needs. Key methods included <b class="not">surveys</b>, <b class="not">interviews</b>, and <b class="not">testing</b>, with successful results and positive feedback. The project highlighted the subjective nature of user experiences, emphasizing the importance of user-centered design and continuous improvement for a better user experience.</p>
+
+        <h3>Credits</h3>
+        <p class="text">Finally, I would like to express my heartfelt gratitude to my team, including Aino Kolkka, Teemu Saikkonen, and Saga Yliluoma, and to all the users who actively participated. The unwavering dedication of my team and the invaluable feedback from users have been the driving forces behind the success of this project. I extend my sincere thanks to everyone who played an essential role in this project.</p>
+        </div>
+    </section>
+    <nav class="nav2">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a class="a2" href="index.html">Back To Home</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    
+    <footer>
+
+        <p>Copyright &#169; 2023 Santeri Savolainen. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
