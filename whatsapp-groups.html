@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santeri Savolainen - Projekti </title>
+    <meta name="description" content="Tutustu UI/UX-suunnitteluni portfoliocasestudyyn, joka esittelee osaamiseni käyttöliittymässä, käyttäjäkokemuksessa, vuorovaikutussuunnittelussa ja muissa suunnittelun osa-alueissa.">
+    <meta name="keywords" content="UI/UX, Portfolio, /UX-suunnittelu, Tuotesuunnittelu,Käyttöliittymä, Käyttäjäkokemus, Vuorovaikutussuunnittelu, Informaatioarkkitehtuuri, Wireframing, Prototyypit, Käytettävyys, Käyttäjätutkimus, Design Thinking, Casestudy, Suunnitteluprosessi, Visuaalinen suunnittelu, Responsiivinen suunnittelu, Mobiilisuunnittelu, Verkkosuunnittelu, Käyttäjätestaus, Iteratiivinen suunnittelu, Tehtävänkulut, Käyttäjäpolut, Käytettävyystestaus, Suunnittelujärjestelmä, Brändäys, Sketsaus, Suunnittelutyökalut, Portfolioshowcase">
+    <meta name="author" content="Santeri Savolainen">
+
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wa-styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/wa_fav.png">
+
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="./" class="logo">workofsanteri</a>
+        <div class="menu">
+            <ul class="nav-links">
+                <li><a href="./">Etusivu</a></li>
+                <li><a href="./about">Minusta</a></li>
+
+                <li><a class="hidden" href="#" onclick="openEmail(); return false;">Sähköposti</a></li>
+                <li><a class="hidden" href="https://www.linkedin.com/in/santerisavolainen" target="_blank">LinkedIn</a></li>
+                <div class="dropdown-container">
+                    <button class="button">Ota yhteyttä</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#" onclick="openEmail()">
+                            <img src="assets/Copy_2x.png" class="icon" alt="" width="14px">
+                            <span>Sähköposti</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/santerisavolainen" target="_blank">
+                            <img src="assets/link-tab.png" class="icon" width="12px" style="opacity: 80%;">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cover"></div>
+
+    <div class="page">
+        <div class="phones">
+            <img src="images/WA-images/Mockup-2.png" alt="" class="cover-img">
+            <img src="images/WA-images/Mockup.png" alt="" class="cover-img">
+            <img src="images/WA-images/Mockup-5.png" alt="" class="cover-img">
+        </div>
+
+        <div class="info">
+            <p><strong>Tiimi:</strong> 4 henkilöä</p>
+            <p><strong>Rooli:</strong> Tutkimukset, ideointi, visuaalinen suunnittelu</p>
+            <p><strong>Kesto:</strong> 6 viikkoa</p>
+            <p><strong>Ajankohta:</strong> Syksy 2023</p>
+        </div>
+
+        <div class="container">
+            <h2 >Yleiskatsaus</h2>
+            <p>Projektissa keskityimme parantamaan WhatsAppin käyttäjäkokemusta. Tutkimuksemme painottui käyttäjien kokemuksiin ryhmistä ja niiden hallinnasta. Lähtökohtanamme oli ymmärtää, näkevätkö käyttäjät epäaktiiviset ryhmät haitallisina ja miten voimme parantaa "Keskustelut"-sivun käyttökokemusta. Työmme kattoi tutkimuksen, ideoinnin, prototyyppien suunnittelun sekä ratkaisujen testaamisen. Lopputuloksena syntyi käyttäjäystävällisiä konsepteja ryhmien hallintaan ja parempaan käyttökokemukseen.</p>
+        </div>
+
+        <div class="container">
+            <h1>Ongelma</h1>
+            <h2>Epäaktiiviset ryhmät kasvattavat WhatsAppin etusivun pituutta</h2>
+            <p>Moni meistä on varmasti huomannut, että WhatsApp-keskustelujen etusivu venyy pitkäksi, ja aika ajoin saattaa tulla vastaan vanha, tarpeeton ryhmä. Näitä ryhmiä kertyy paljon, eikä niiden poistaminen aina houkuttele. Kysymme itseltämme: Löytyisikö tähän parempi ratkaisu?</p>
+        </div>
+
+        <div class="container">
+            <h1>Ratkaisut</h1>
+            <h2>Yksityisviestien ja ryhmäviestien erottelu samasta näkymästä, omiksi näkymiksi</h2>
+            <div class="wrapper">
+                <div class="gifs">
+                    <img src="assets/label1.png" alt="" width="auto" height="150px" draggable="false">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnBkNGlvNHludGRhbmdyaXJmb2ZnaTBmcGw3Nmh0d3RhaGcwNnI4YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ajGooPNIoygOegqoRt/giphy.gif" alt="Cropped GIF" class="cropped-gif" draggable="false">
+                </div>
+                <div class="b-points">
+                    <p>Selkeämpi erottelu omilla näkymillään parantaa sovelluksen selailun vaivattomuutta.</p>
+                    <p>Lyhyemmät listat ryhmiä tai yksityishenkilöitä etsiessä tekevät käyttökokemuksesta sujuvamman.</p>
+                    <p>Tärkeät viestit eivät jää varjoon aktiivisten ryhmien keskustellessa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Poistamispäivämäärä ryhmän luonnissa</h2>
+            <div class="wrapper2">
+                <div class="gifs">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGE5czlpZTYxM3l6cGtyc24yY2tqMTByaGJmeG1nN3NuZGNyb29iZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SMQ2txTVTYR5xrnK1k/giphy.gif" alt="Cropped GIF" class="cropped-gif2" draggable="false">
+                    <img src="assets/label2.png" width="auto" height="150px" draggable="false">
+                </div>
+                <div class="b-points">
+                    <p>Luonnin yhteydessä tarjotaan mahdollisuus asettaa ryhmän poistamispäivämäärä.</p>
+                    <p>Vähentää tarpeettomien ryhmien lisääntymistä, erityisesti epäaktiivisten ryhmien kohdalla.</p>
+                    <p>Esimerkkinä: Ryhmän luonnin yhteydessä voi asettaa poistamispäivämäärän, vaikka juhlien suunnitteluryhmälle. Näin varmistetaan, ettei ryhmä jää tarpeettomana etusivulle pitkäksi aikaa juhlien jälkeen.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container hidden-text" id="container1">
+            <h1>Tutkimus</h1>
+            <h2>Tutkimuskysymykset</h2>
+            <div class="Q">
+              <div class="Q-1 animation-element">
+                <img src="assets/1.png" alt="" draggable="false">
+                <p>Mitä puutteita on vanhojen ryhmien säilytystavassa? </p>
+              </div>
+              <div class="Q-2 animation-element">
+                <img src="assets/2.png" alt="" draggable="false">
+                <p>Miten voidaan parantaa vanhojen ryhmien hallittavuutta? </p>
+              </div>
+              <div class="Q-3 animation-element">
+                <img src="assets/3.png" alt="" draggable="false">
+                <p>Kokevatko käyttäjät epäaktiivisia ryhmiä haitallisiksi? </p>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="container">
+            <h1>Kyselylomake</h1>
+            <div class="wrapper3">
+            <div>
+            <h2>53% vastanneista ei häirinnyt epäaktiiviset ryhmät</h2>
+            <p>Kyselyyn vastasi <b>68 henkilöä,</b> joiden ikähaitari ulottui 16-vuotiaista yli 50-vuotiaisiin, ja vastaajien keski-ikä oli 21–30 vuotta. Kyselyn levitimme WhatsAppin kautta, sillä odotimme tavoittavamme riittävästi kohderyhmää kyseiseltä palvelualustalta. Tulokset yllättivät meidät, kun yli puolet vastaajista ilmoitti, etteivät heitä häirinneet epäaktiiviset ryhmät. Silti kyselystä nousi esiin yhtenäinen teema: käyttäjät toivoivat selkeämpää ja paremmin hallittavaa etusivun näkymää.</p>
+            </div>
+            <img src="images/WA-images/survey.png" alt="" width="96px" height="96px">
+            </div>
+        
+        </div>
+
+        <div class="container">
+            <h1>Haastattelu</h1>
+        <div class="wrapper3">
+            <div>
+            <h2>Vanhoissa ryhmissä muistoja</h2>
+            <p>Valitsimme haastateltaviksi seitsemän kyselyyn vastannutta henkilöä, jotka edustivat eri ikäryhmiä. Käytimme puolistrukturoitua haastattelumallia, jotta keskustelu voisi edetä rennosti ja haastateltavilla olisi mahdollisuus tuoda esiin omia näkemyksiään. Samalla varmistimme, että kerättävä data olisi vertailukelpoista. Haastatteluista kävi ilmi, että epäaktiivisia ryhmiä ei koeta haitallisina, sillä niitä saatetaan aika ajoin tarkastella nostalgisista syistä tai muistojen vuoksi.</p>
+            </div>
+            <img src="images/WA-images/mic.png" alt="" width="96px" height="96px">
+        </div>
+        </div>
+
+        <div class="container">
+            <h1>Ideointi</h1>
+            <h2>Ryhmille parempaa hallintaa</h2>
+            <p>Tutkimuksen tuloksista kävi ilmi, että suurin osa käyttäjistä ja kaikki haastateltavat eivät koe epäaktiivisia ryhmiä haitallisina, vaan pikemminkin pitävät niitä muistojen säilyttäjinä. Kuitenkin monet ilmaisivat kaipuunsa järjestelmällisemmälle tavalle hallita ryhmiä ja helppoutta poistaa tarpeettomat ryhmät. Näiden pohjalta lähdimme ideoimaan ratkaisuja.</p>
+            <p>Crazy 8-menetelmän avulla synnytimme ideoita, jotka järjestimme affiniteettikaavioon. Sieltä nousi esiin kolme pääteemaa:</p>
+            <div class="aff-wrapper">
+                <img src="images/WA-images/aff1.png" alt="" width="250px" draggable="false">
+                <img src="images/WA-images/aff2.png" alt="" width="250px" draggable="false">
+                <img src="images/WA-images/Aff3.png" alt="" width="250px" draggable="false">
+            </div>
+        </div>
+
+        <div class="container">
+            
+            <h1>Persoonat</h1>
+            <h2>Kolme käyttäjäpersoonaa</h2>
+            <div class="wrapper">
+            <img src="images/WA-images/personas.png" alt="" class="personas">
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Yhteenveto tuloksista</h1>
+            <h2>Käyttäjät kaipasivat parannuksia ryhmien järjestelyyn</h2>
+            <p>Tutkimustulokset osoittavat, että useimpia käyttäjiä eivät haittaa niinkään epäaktiiviset ryhmät, mutta ryhmien hallinnassa olisi tarvetta parannuksiin. Monilla käyttäjillä on erilaisia ryhmiä eri sovelluksissa, eikä heillä näytä olevan halua siirtää näiden ryhmien ominaisuuksia parantaakseen WhatsAppin ryhmiä. Tämä vihjaa siihen, että käyttäjät pitävät eri sovelluksia eri tarkoituksia varten.</p>
+        </div>
+
+        <div class="container">
+            <h1>Ratkaisukonsepti</h1>
+            <h2>Yksityisviestien ja ryhmäviestien jaottelu omiksi näkymiksi</h2>
+            <p>Tutkimustulokset osoittavat, että useimpia käyttäjiä eivät haittaa niinkään epäaktiiviset ryhmät, mutta ryhmien hallinnassa olisi tarvetta parannuksiin. Monilla käyttäjillä on erilaisia ryhmiä eri sovelluksissa, eikä heillä näytä olevan halua siirtää näiden ryhmien ominaisuuksia parantaakseen WhatsAppin ryhmiä. Tämä vihjaa siihen, että käyttäjät pitävät eri sovelluksia eri tarkoituksia varten.</p>
+            <div class="proto-wrapper">
+            <img src="images/WA-images/Mockup-2.png" alt="" class="proto">
+            <img src="images/WA-images/Mockup-1.png" alt="" class="proto">
+            </div>
+        </div>
+        <div class="container">
+            <h2>Ryhmän luoja voi halutessaan määrittää poistamispäivämäärän</h2>
+            <p>Toinen ratkaisu liittyy käyttäjiin, jotka kokevat epäaktiiviset ryhmät haitallisiksi. Se sisältää asetuksen, jonka avulla voi asettaa ryhmän poistamispäivämäärän, esimerkiksi tapahtuman jälkeen. Näin vältetään turhien ryhmien kasaantuminen etusivulle ja viestilistaan.</p>
+            <div class="proto-wrapper">
+            <img src="images/WA-images/Mockup.png" alt="" class="proto">
+            <img src="images/WA-images/Mockup-3.png" alt="" class="proto">
+            <img src="images/WA-images/Mockup-4.png" alt="" class="proto">
+            <img src="images/WA-images/Mockup-6.png" alt="" class="proto">
+            <img src="images/WA-images/Mockup 9.png" alt="" class="proto">
+            <img src="images/WA-images/Mockup-5.png" alt="" class="proto">
+            <img src="images/WA-images/Mockup-7.png" alt="" class="proto">
+            </div>
+
+        </div>
+
+        <div class="container">
+            <h1>Pohdinta ja opit</h1>
+            <h2>Mitä tekisin toisin ensi kerralla?</h2>
+            <p>Tämä oli ensimmäinen käyttäjäkokemusprojektini. Huolimatta lopputuloksesta, olen valtavan kiitollinen siitä, että sain kokea koko käyttäjäkokemusprosessin ja nähdä, millaista se todella on. Tähän liittyen olen pohdiskellut muutamia asioita:</p>
+        
+        </div>
+
+        <div class="container hidden-text" id="container2">
+            <p class="animation-element"><strong class="line "> Tutkimuksen laajennus:</strong> Kun selvisi, etteivät käyttäjät kokeneet epäaktiivisia ryhmiä haitallisina, olisin toivonut syventyväni enemmän tutkimukseen erottaakseni vanhojen ryhmien ja epäaktiivisten ryhmien mahdolliset erot sekä ymmärtääkseni paremmin niiden merkityksiä käyttäjille.</p>
+            <p class="animation-element"><strong class="line">Ideointivaiheessa enemmän näkökulmia:</strong> Ideointivaiheessa haluaisin antaa enemmän aikaa ja tilaa luovuudelle. Laajentamalla ideointiprosessia olisin voinut kokeilla erilaisia lähestymistapoja ja hakea monipuolisempia ratkaisuja käyttäjien tarpeisiin.</p>
+            <p class="animation-element"><strong class="line">Diversifioidumpi kohderyhmä:</strong>Jotta olisin saanut monipuolisempaa näkemystä käyttäjien kokemuksista, olisin laajentanut kohderyhmääni, erityisesti kiinnittäen huomiota niihin käyttäjiin, jotka kokivat epäaktiiviset ryhmät haitallisiksi. Tämä olisi tuonut esiin mahdollisia konflikteja ja tarpeita, joiden ratkaiseminen olisi voinut olla keskeistä suunnitteluprosessissa.</p>
+        </div>
+        
+
+        <div class="container lopetus">
+            <h2>Kiitos lukemisesta!</h2>
+            <p>
+                Jos haluat keskustella lisää, ota rohkeasti yhteyttä 
+                <a href="#" onclick="openEmail(); return false;" style="display:inline; text-decoration: 0.5px underline;">sähköpostitse</a> tai lähetä viestiä 
+                <a href="https://www.linkedin.com/in/santerisavolainen" target="_blank" style="display:inline; text-decoration: 0.5px underline;">LinkedIn:issä!</a>
+            </p>
+            
+        </div>
+        
+        <div class="container">
+            <h2>Lisää projektejani:</h2>
+            <div class="wrapper4">
+                <a href="./homeapp">
+                    <img src="images/ka-placeholder.png" alt="">
+                </a>
+                <a href="./interaces">
+                    <img src="images/Ui-placeholder.png" alt="">
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <h3>Santeri Savolainen</h3>
+            </div>
+            <div class="footer-wrapper">
+                <div class="footer-links">
+                    <ul class="footer-nav-links">
+                        <li><a href="./">Etusivu </a></li>
+                        <li><a href="https://www.linkedin.com/in/santerisavolainen" target="_blank">
+                            <span>LinkedIn</span>
+                        </a>
+                        </li>
+                        <li><a href="#" onclick="openEmail() ; return false;">santeri.savolainen@hotmail.com</a></li>
+                        <li><a href="./about">Minusta</a></li>
+                        
+                    </ul>
+                </div>
+                <h4>Copyright © 2024 Santeri Savolainen. All Rights Reserved. </h4>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

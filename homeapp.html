@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santeri Savolainen - Projekti </title>
+    <meta name="description"
+        content="Tutustu UI/UX-suunnitteluni portfoliocasestudyyn, joka esittelee osaamiseni käyttöliittymässä, käyttäjäkokemuksessa, vuorovaikutussuunnittelussa ja muissa suunnittelun osa-alueissa.">
+    <meta name="keywords"
+        content="UI/UX, Portfolio, /UX-suunnittelu, Tuotesuunnittelu,Käyttöliittymä, Käyttäjäkokemus, Vuorovaikutussuunnittelu, Informaatioarkkitehtuuri, Wireframing, Prototyypit, Käytettävyys, Käyttäjätutkimus, Design Thinking, Casestudy, Suunnitteluprosessi, Visuaalinen suunnittelu, Responsiivinen suunnittelu, Mobiilisuunnittelu, Verkkosuunnittelu, Käyttäjätestaus, Iteratiivinen suunnittelu, Tehtävänkulut, Käyttäjäpolut, Käytettävyystestaus, Suunnittelujärjestelmä, Brändäys, Sketsaus, Suunnittelutyökalut, Portfolioshowcase">
+    <meta name="author" content="Santeri Savolainen">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ka-style.css">
+    <script src="scripts.js"></script>
+
+    <link rel="icon" type="image/png" href="assets/S.png">
+    
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="./" class="logo">workofsanteri</a>
+        <div class="menu">
+            <ul class="nav-links">
+                <li><a href="./">Etusivu</a></li>
+                <li><a href="./about">Minusta</a></li>
+
+                <li><a class="hidden" href="#" onclick="openEmail()">Sähköposti</a></li>
+                <li><a class="hidden" href="https://www.linkedin.com/in/santerisavolainen" target="_blank">LinkedIn</a></li>
+                <div class="dropdown-container">
+                    <button class="button">Ota yhteyttä</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#" onclick="openEmail(); return false;">
+                            <img src="assets/Copy_2x.png" class="icon" alt="" width="14px">
+                            <span>Sähköposti</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/santerisavolainen" target="_blank">
+                            <img src="assets/link-tab.png" class="icon" width="12px" style="opacity: 80%;">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="cover">
+    </div>
+
+<div class="page">
+        <div class="phones">
+            <img src="images/KA-images/Kirjaudu.png" alt="" class="cover-img">
+            <img src="images/KA-images/Tehtävä lisätty.png" alt="" class="cover-img">
+            <img src="images/KA-images/Muistio lisätty.png" alt="" class="cover-img">
+        </div>
+
+        <div class="info">
+            <p><strong>Tiimi:</strong> 1 henkilö</p>
+            <p><strong>Rooli:</strong> Suunnittelu, toteutus, julkaisu</p>
+            <p><strong>Kesto:</strong> 7 viikkoa</p>
+            <p><strong>Ajankohta:</strong> Syksy 2023</p>
+        </div>
+
+        <div class="container">
+            <h2 >Yleiskatsaus</h2>
+            <p>Kehitin kotitalouden hallintasovelluksen, joka mahdollistaa käyttäjän rekisteröitymisen ja kirjautumisen sovellukseen. Sovelluksen avulla käyttäjä voi luoda oman taloutensa valitsemallaan nimellä, johon hän voi lisätä taloutta koskevia tehtäviä ja muistilistoja, kuten esimerkiksi ostoslistan. 
+                <br><br>
+                Toteutin toimivan Minimum Viable Product web-sovelluksen hyödyntäen Reactia, Node.js:ää ja MySQL-tietokantaa. Asiakaspään että palvelinpään hostasin Render-palvelussa, ja tietokannan hallinnoinnin hoidin FreeSQLdatabase-palvelussa.</p>
+        </div>
+
+    <div class="container">
+            <h1>Ongelma</h1>
+            <h2>Arjen askareiden kommunikaatio</h2>
+            <p>Tämän projektin taustalla oli havainto siitä, että monilla talouksilla on vaikeuksia ylläpitää tehokasta kommunikaatiota ja koordinointia arkiaskareissa. Halusin luoda sovelluksen, joka ratkaisee tämän ongelman mahdollistamalla helpon ja kätevän tavan, jolla talouden jäsenet voivat hallita yhteisiä tehtäviä, jakaa ostoslistoja, synkronoida kalenteritapahtumia ja pitää kirjaa tärkeistä asioista. Sovelluksen avulla käyttäjät voivat parantaa päivittäistä organisaatiotaan ja yhteydenpitoa perheenjäsenten tai asuinkumppaneiden kanssa.</p>
+        
+
+        <div class="prototype">
+            <img class="grid" src="images/KA-images/Muistio.png" alt="">
+            <img class="grid" src="images/KA-images/Lisää muistiinpano.png" alt="">
+            <img class="grid" src="images/KA-images/Muistio lisätty.png" alt="">
+            <img class="grid" src="images/KA-images/Tehtävät.png" alt="">
+            <img class="grid" src="images/KA-images/Lisää tehtävä.png" alt="">
+            <img class="grid" src="images/KA-images/Tehtävä lisätty.png" alt="">
+
+            <img class="grid" src="images/KA-images/Kirjaudu.png" alt="">
+            <img class="grid" src="images/KA-images/Luo tili.png" alt="">
+            <img class="grid" src="images/KA-images/Liity.png" alt="">
+            <img class="grid" src="images/KA-images/Luo.png" alt="">
+        </div>
+
+        <p>Tämä on MVP-versio, tässä <a href="./interaces" target="_blank" style="display:inline; text-decoration: 0.5px underline; font-weight: 600;">linkki</a> lopullisiin suunnitelmiin.</p>
+    </div>
+
+
+    <div class="container">
+        <h1>Tavoitteet</h1>
+        <h2>Omaksua kehitysprosessi suunnittelusta toteutukseen</h2>
+        <p>Tarkoitukseni oli syventyä tietokantojen maailmaan ja ymmärtää niiden käytäntöjä perusteellisesti. Tavoitteenani oli omaksua koko kehitysprosessi suunnittelusta toteutukseen, oppien arvokkaita taitoja matkan varrella.</p>
+    
+    </div>
+
+    <div class="container">
+        <h1>Ongelma 1</h1>
+        <h2>Tehtävät</h2>
+        <p>Ongelma, jonka kohtaan itse viikoittain ja johon en ole vielä löytänyt sopivaa ratkaisua. Monille meistä on varmasti tuttua se tunne, kun päivän aikana saa osan mielessä olevista tehtävistä tehdyksi, mutta jossain vaiheessa muistaa asioita, jotka jäivät vielä tekemättä. Useat tutkimukset ovat osoittaneet, että tehtävien visuaalinen merkitseminen ylös lisää tehokkuutta ja vähentää stressiä.</p>
+    
+    </div>
+
+    <div class="container">
+        <h1>Ongelma 2</h1>
+        <h2>Ostoslista</h2>
+        <p>Ruokakauppaan lähteminen ilman etukäteen laadittua ostoslistaa on usein varma keino unohtaa jotain tärkeää. Monet ihmiset siksi suunnittelevat ostoslistansa ennen kauppareissua. Tässä tilanteessa saattaa kuitenkin syntyä ongelmia erityisesti suurissa talouksissa, jos jäsenillä ei ole ollut mahdollisuutta kommunikoida keskenään ennen kauppaan lähtemistä. Toinen talouden jäsen voi huomata jonkin tuotteen loppuneen, mutta ei ole ehtinyt ilmoittaa siitä toiselle. Näinkin saattaa jotain tarpeellista jäädä ostamatta.</p>
+    
+    </div>
+
+    <div class="container">
+        <h1>Ongelma 3</h1>
+        <h2>Yhteinen kalenteri</h2>
+        <p>Hektisessä arjessa, kun kalenteri täyttyy erilaisista menoista ja taloudessa on useampia henkilöitä, muistaminen voi olla haasteellista. Nykyinen ratkaisumme on turvautua perinteisiin kovakantisiin kalentereihin ja seinäalmanakkoihin. Vaikka digitaaliset synkronoidut kalenterit ovat vaihtoehto, en koe niitä aina optimaalisina. Ongelmana on esimerkiksi se, että yhden henkilön työpäivän tapaamiset eivät välttämättä ole relevantteja tai merkityksellisiä kaikille talouden jäsenille. Lisäksi lapset voivat harvoin osallistua kalenterien seurantaan, sillä heillä ei välttämättä ole pääsyä tietoihin.</p>
+    
+    </div>
+
+    <div class="container">
+        <h1>Ongelma 4</h1>
+        <h2>Reseptikirja/ Vieraskirja/ Päiväkirja</h2>
+        <p>Viimeinen osio, jonka olen harkinnut, olisi digitaalisen kirjan tyylinen, joka sisältää useita sivuja. Esimerkiksi lapsiperheille tämä voisi toimia reseptikirjana. Jos taloudessa on nuoria, jotka saapuvat kotiin ennen vanhempia ja ruoka on valmiiksi ostettu, tähän osioon voisi vanhempi kirjoittaa ohjeet ruuan valmistukseen.
+            <br><br>
+            Jos talous on tarkoitettu jaettavan suvun mökin ylläpitämiseen, tämä osio voisi toimia vieraskirjana, minne vieraat voisivat kirjoittaa tervehdyksiään käytyään mökillä. 
+            <br><br>
+            Yksin asuvan kohdalla se voisi toimia päiväkirjana tai tallentaa myös lempireseptejään. Tähän osioon haluaisin tehdä paljon lisää tutkimusta selvittääkseni, mitä erilaisia käyttötarkoituksia tällä voisi olla ja mitä käyttäjät pitäisivät hyödyllisenä.
+            </p>
+    
+    </div>
+
+    <div class="container">
+        <h1>Persoonat</h1>
+        <h2>Käyttäjäpersoonat</h2>
+        <p>Aloitin harkitsemalla potentiaalisia käyttäjiä ja heidän tapojaan käyttää tuotetta. Laadin kolme käyttäjäpersoonaa, joiden avulla pyrin kuvaamaan kolmea erilaista käyttäjäryhmää.</p>
+        
+        <img class="personas" src="images/KA-images/persoonat.png" alt="">
+    </div>
+
+    <div class="container">
+        <h1>Prototyypi</h1>
+        <h2>Käyttäjätarinoista prototyyppiin</h2>
+        <p>Laadin jokaiselle käyttäjätarinan, jotta voisin selkeästi ymmärtää käyttäjien tarpeita ja tavoitteita. Tämä auttoi minua keskittymään yhteen ongelmaan kerrallaan ja varmistamaan, että ratkaisen sen halutulla tavalla. Tämän jälkeen aloin suunnitella Low-fidelity prototyyppiä visualisoidakseni käyttäjätarinoiden käyttäjäpolun.</p>
+        
+        <p><strong>Marja:</strong> Käyttäjänä, haluan luoda ostoslistan helposti ja selkeästi, jotta voin suunnitella tehokkaasti ruokakaupassa käynnit.</p>
+        <img class="story" src="images/KA-images/Marja-tarina.png" alt="">
+
+        <p><strong>Sara:</strong> Käyttäjänä, haluan merkitä ylös koulutehtävän helposti löydettäväksi ja ymmärrettäväksi,
+            jotta voin tietää, mitä tehtäviä on hoidettavana.</p>
+        <img class="story" src="images/KA-images/Sara-tarina.png" alt="">
+    </div>
+
+    <div class="container">
+        <h1>Toteutustapa</h1>
+        <h2>React, Node.js & MySQL</h2>
+        <p>Sitten tutustuin erilaisiin toteutusvaihtoehtoihin ja päädyin valitsemaan React-kirjaston asiakaspään toteutukseen ja Node.js:n palvelinpään käyttöön. Valitsin Reactin sen suosionsa ja laajan yhteisön tuen vuoksi. Koska React ja Node.js käyttävät jo aiemmin minulle tuttua JavaScript-kieltä, tämä oli myös merkittävä tekijä valinnassa lyhyen toteutusajan puitteissa. Valitsin MySQL:n, koska se tarjoaa laajan tuen eri ohjelmointikielille ja monipuoliset integraatiomahdollisuudet, mikä helpottaa sen käyttöä projektissani.</p>
+    
+    </div>
+
+    <div class="container">
+        <h1>Suunnitelma</h1>
+        <h2>Sovelluksen arkkitehtuuri</h2>
+        <p>Laadin sivu- ja tietokantakaaviot helpottaakseni sovelluksen arkkitehtuurin hahmottamista, sain visuaalisen työkalun suunnitteluprosessille. Kaaviot auttoivat selkeyttämään sivurakennetta ja tietokantasuunnittelua, luoden vahvan perustan sovelluksen kehitykselle.</p>
+  
+        <div class="architecture">
+        <img class="db" src="images/KA-images/database.png" alt="">
+        <img src="images/KA-images/site-map.png" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Priorisointi</h1>
+        <h2>Toiminnallisuuksien rajaukset</h2>
+        <p>Ennen varsinaisen toteutuksen aloittamista suoritin priorisointia MoSCoW-menetelmän avulla. Tämä auttoi minua keskittymään olennaisimpiin piirteisiin ja niiden rajaamiseen määräaikaa varten. Lyhyen toteuttamis ajan vuoksi päätin toteuttaa, Rekisteröinnin, Sisään-/ Ulos kirjautumisen, Kodin luonnin, Tehtävä-osion sekä Ostoslista-osion.</p>
+        
+        <img class="moscow" src="images/KA-images/moscow.png" alt="">
+
+    </div>
+
+    <div class="container">
+        <h1>Pohdit ja Opit </h1>
+        <h2>Hyvä suunnittelu on avain onnistuneeseen projektiin</h2>
+        <p>Tämän projektin myötä sain arvokasta kokemusta niin suunnittelusta kuin toteutuksestakin. Käyttäjätarinoiden ja priorisoinnin avulla keskittyminen olennaisiin piirteisiin oli ratkaisevan tärkeää lyhyessä aikataulussa. Reactin ja Node.js:n käyttö tarjosi tehokkaan kehitysympäristön, ja projektin edetessä ymmärsin syvemmin tietokantojen roolin ja suunnittelun merkityksen. Tästä projektista ymmärsin, kuinka tärkeää on määritellä selkeät suunnitelmat sekä rajaukset ja pitää ne mielessä koko kehitysprosessin ajan.</p>
+    
+    </div>
+
+    <div class="container">
+        <h1>Jos jatkaisin </h1>
+        <h2>Lisää käyttäjä tutkimuksia</h2>
+        <p>Projektin jatkokehityksen osalta suunnittelisin lisää käyttäjätutkimusta. Tarkoituksena olisi suorittaa prototyypin käyttäjätestaus ja hankkia käyttäjäpalaute, jotta voisin yksityiskohtaisesti tunnistaa käyttäjien kohtaamat haasteet. Tavoitteenani olisi syventyä ymmärtämään, millaisiin käyttötilanteisiin käyttäjät näkisivät sovelluksen sopivaksi ja millaisista lisäominaisuuksista he kokisivat hyötyvänsä.</p>
+    
+    </div>
+
+    <div class="container lopetus">
+        <h2>Kiitos lukemisesta!</h2>
+        <p>
+            Jos haluat keskustella lisää, ota rohkeasti yhteyttä 
+            <a href="#" onclick="openEmail(); return false;" style="display:inline; text-decoration: 0.5px underline;">sähköpostitse</a> tai lähetä viestiä 
+            <a href="https://www.linkedin.com/in/santerisavolainen" target="_blank" style="display:inline; text-decoration: 0.5px underline;">LinkedIn:issä!</a>
+        </p>
+        
+    </div>
+    
+    <div class="container">
+        <h2>Lisää projektejani:</h2>
+        <div class="wrapper4">
+            <a href="./whatsapp-groups">
+                <img src="images/wa-placeholder.png" alt="">
+            </a>
+            <a href="./interaces">
+                <img src="images/Ui-placeholder.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer">
+        <div class="footer-logo">
+            <h3>Santeri Savolainen</h3>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-links">
+                <ul class="footer-nav-links">
+                    <li><a href="./">Etusivu </a></li>
+                    <li><a href="https://www.linkedin.com/in/santerisavolainen" target="_blank">
+                        <span>LinkedIn</span>
+                    </a>
+                    </li>
+                    <li><a href="#" onclick="openEmail() ; return false;">santeri.savolainen@hotmail.com</a></li>
+                    <li><a href="./about">Minusta</a></li>
+                    
+                </ul>
+            </div>
+            <h4>Copyright © 2024 Santeri Savolainen. All Rights Reserved. </h4>
+        </div>
+    </div>
+
+</footer>
+</body>

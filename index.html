@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santeri Savolainen - Projekti </title>
+    <meta name="description"
+        content="Tutustu UI/UX-suunnitteluni portfoliocasestudyyn, joka esittelee osaamiseni käyttöliittymässä, käyttäjäkokemuksessa, vuorovaikutussuunnittelussa ja muissa suunnittelun osa-alueissa.">
+    <meta name="keywords"
+        content="UI/UX, Portfolio, /UX-suunnittelu, Tuotesuunnittelu,Käyttöliittymä, Käyttäjäkokemus, Vuorovaikutussuunnittelu, Informaatioarkkitehtuuri, Wireframing, Prototyypit, Käytettävyys, Käyttäjätutkimus, Design Thinking, Casestudy, Suunnitteluprosessi, Visuaalinen suunnittelu, Responsiivinen suunnittelu, Mobiilisuunnittelu, Verkkosuunnittelu, Käyttäjätestaus, Iteratiivinen suunnittelu, Tehtävänkulut, Käyttäjäpolut, Käytettävyystestaus, Suunnittelujärjestelmä, Brändäys, Sketsaus, Suunnittelutyökalut, Portfolioshowcase">
+    <meta name="author" content="Santeri Savolainen">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="land-style.css">
+    <script src="scripts.js"></script>
+
+    <link rel="icon" type="image/png" href="assets/S.png">
+    
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="./" class="logo">workofsanteri</a>
+        <div class="menu">
+            <ul class="nav-links">
+                <li><a href="./">Etusivu</a></li>
+                <li><a href="./about">Minusta</a></li>
+
+                <li><a class="hidden" href="#" onclick="openEmail()">Sähköposti</a></li>
+                <li><a class="hidden" href="https://www.linkedin.com/in/santerisavolainen" target="_blank">LinkedIn</a></li>
+                <div class="dropdown-container">
+                    <button class="button">Ota yhteyttä</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#" onclick="openEmail() ; return false;">
+                            <img src="assets/Copy_2x.png" class="icon" alt="" width="14px">
+                            <span>Sähköposti</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/santerisavolainen" target="_blank">
+                            <img src="assets/link-tab.png" class="icon" width="12px" style="opacity: 80%;">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+    
+<section class="landing-section">
+    <div class="landing">
+        <h5>Hei, olen Santeri Savolainen</h5>
+        <h6>Product <span class="black-pipe">︱</span> UI/UX <br>-suunnittelija</h6>
+        <p>Yhdistän käyttäjäkeskeisen suunnittelun sekä liiketalouden osaamiseni 
+            – tuoden innovatiivisen otteen digitaaliseen tuotekehitykseen.</p>
+    </div>
+</section>
+
+
+
+
+    <section>
+        <div class="center">
+            <div class="sub-title">
+                <h1>Projektit</h1>
+            </div>
+        </div>
+        <div class="card">
+
+            <div class="card-wrapper">
+                <div class="card-text">
+                    <h2>Sovelluksen käytettävyys</h2>
+                    <p>Uusi WhatsApp-elämys odottaa! Tutkimme, miten voimme tehdä ryhmien hallinnasta sujuvampaa. Katso,
+                        kuinka muokkaamme tulevaisuuden WhatsApp-kokemusta!</p>
+                    <a href="./whatsapp-groups" class="primary">Katso lisää</a>
+                </div>
+                <img class="card-cover" src="images/wa-cover.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="card">
+            <div class="card-wrapper reverse">
+                <div class="card-text">
+                    <h2>Käyttöliittymä suunnitelu</h2>
+                    <p>Tässä minä kerron whatsapp ryhmä casesta lyhyesti jotain Ihan muutamalla lauseella. </p>
+                    <a href="./interaces" class="primary">Katso lisää </a>
+                </div>
+                <img class="card-cover" src="images/UI-cover.png" alt="" style="max-width: 500px">
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="card">
+            <div class="card-wrapper">
+                <div class="card-text">
+                    <h2>Ryhmien Käytettävyys</h2>
+                    <p>Tässä minä kerron whatsapp ryhmä casesta lyhyesti jotain Ihan muutamalla lauseella. </p>
+                    <a href="./homeapp" class="primary">Katso lisää </a>
+                </div>
+                <img class="card-cover" src="images/ka-cover.png" alt="" style="max-width: 430px; padding-right: 30px;">
+                
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <h3>Santeri Savolainen</h3>
+            </div>
+            <div class="footer-wrapper">
+                <div class="footer-links">
+                    <ul class="footer-nav-links">
+                        <li><a href="./">Etusivu </a></li>
+                        <li><a href="https://www.linkedin.com/in/santerisavolainen" target="_blank">
+                            <span>LinkedIn</span>
+                        </a>
+                        </li>
+                        <li><a href="#" onclick="openEmail() ; return false;">santeri.savolainen@hotmail.com</a></li>
+                        <li><a href="./about">Minusta</a></li>
+                        
+                    </ul>
+                </div>
+                <h4>Copyright © 2024 Santeri Savolainen. All Rights Reserved. </h4>
+            </div>
+        </div>
+
+    </footer>
+
+</body>

@@ -1,0 +1,443 @@
+@font-face {
+    font-family: 'Elza'; /* Choose a name for your font */
+    src: url('fonts/49089') format('ttf'), /* Font format and path to the file */
+   
+  }
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #EEEEEE;
+    cursor: default;
+}
+
+
+
+li {
+    list-style: none;
+  }
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    height: 25px;
+    margin: 0;
+}
+
+
+
+/* Typography */
+h1 {
+    color: rgba(51, 51, 51, 0.50);
+    font-family: 'Elza', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  
+  h2 {
+    color: #333;
+    margin: 0;
+    font-family: 'Elza', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  h3 {
+    color: #EEEEEE;
+    font-family: 'Elza', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.92px;
+    margin: 0;
+  }
+  
+  h4 {
+    color: #EEEEEE;
+    font-family: 'Elza', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  p {
+    color: #333;
+    font-family: 'Elza', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    margin: 0;
+    margin-top: 36px;
+    max-width: 800px;
+  }
+
+
+
+/* Navigation */
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 48px;
+    height: 100px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    font-family: 'Elza', sans-serif;
+    font-weight: 300;
+    color: #333;
+    letter-spacing: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+  }
+
+  .wrapper4 img {
+    transition: transform 0.5s ease;
+  }
+
+  .wrapper4 img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+
+
+  
+  .links {
+    display: flex; 
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 7%;
+    
+  }
+
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:50px;
+    justify-content: space-evenly;
+  }
+
+  
+  .logo {
+    margin-left: 7%;
+    cursor: pointer;
+    font-weight: 400;
+  }
+  
+  .nav-links li {
+    position: relative;
+    color: #333;
+    overflow: hidden;
+  }
+  
+  .nav-links li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    width: 0;
+    height: 1px;
+    background-color: #3333337c;
+    transition: right 0.5s ease, width 0.5s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #333;
+  }
+  
+  .nav-links li:hover::before {
+    right: 0;
+    width: 100%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+  /* Hamburguer Menu */
+
+  .burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    transition: transform 0.4s ease;
+}
+
+.line1, .line2, .line3 {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+.line1, .line2, .line3 {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Hamburger animation */
+.burger.change .line1 {
+  transform: rotate(-45deg) translate(-8px, 13px);
+}
+
+.burger.change .line2 {
+  opacity: 0;
+}
+
+.burger.change .line3 {
+  transform: rotate(45deg) translate(-8px, -13px);
+}
+
+/* Show and hide animation for the menu */
+.menu {
+  transition: transform 0.4s ease; /* Add transition property */
+}
+
+.menu.show {
+  transform: translateX(0); /* Show menu by translating it into view */
+}
+
+
+  /* Button Styles */
+
+.button {
+  border: none;
+  width: 100%;
+  padding: 12px 30px;
+  border-radius: 8px;
+  transition: background-color 0.5s ease;
+  font-family: 'Elza';
+  font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  letter-spacing: 1px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+
+
+/* Dropdown Styles */
+
+.icon {
+    margin-right: 8px;
+}
+
+.dropdown-container {
+  position: relative;
+  padding: 10px 0px 10px 0px;
+}
+
+.dropdown-container:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  width: 100%;
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  border-radius: 8px;
+  margin-top: 4px;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  border-radius: 0;
+}
+
+.dropdown-content a:first-child:hover {
+  border-radius: 8px 8px 0 0;
+}
+
+.dropdown-content a:last-child:hover {
+  border-radius: 0 0 8px 8px;
+}
+
+.dropdown-content a:hover {
+  background-color: #EEEEEE;
+}
+
+
+
+.button:hover {
+  cursor: pointer;
+  
+}
+
+a:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+ 
+
+/* Footer Styles */
+
+footer {
+    width: 100%;
+  }
+  
+  .footer-logo {
+    margin-left: 7%;
+    padding-top: 50px;
+  }
+  
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .footer-links a {
+    color: #FFF;
+    font-family: 'Elza';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.5px;
+  }
+  
+  .footer-nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    max-width: 50%;
+    margin-left: 15%;
+    padding: 0%;
+    margin-top: 72px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    .navbar {
+      padding: 0px 10px;
+    }
+
+    .nav-links a {
+      color: #333;
+    }
+
+    h1 {
+        font-size: 10px;
+        letter-spacing: .5px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+
+
+    h4 {
+        font-size: 10px;
+        font-weight: 100;
+        opacity: .7;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .dropdown-container {
+      padding: 0px;
+    }
+    
+    
+
+
+    .animation-element,
+    .animation-element.visible {
+      opacity: 1;
+      transform: translateX(0);
+      transition: none; /* Remove the transition effect on mobile */
+    }
+
+
+
+  .wrapper4 img {
+    scale: .8;
+  }
+
+    @media only screen and (max-width: 860px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 200px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 0;
+        gap: 10px;
+    }
+  
+    .nav-links.show {
+        display: flex;
+    }
+  
+    .nav-links li {
+        margin: 0;
+        padding: 15px;
+        border-bottom: 1px solid #fff;
+    }
+  
+    .burger {
+        display: flex;
+    }
+    .button {
+        display: none;
+    }
+  
+    .hidden {
+        display: block;
+    }
+  
+    .footer-nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 8%;
+        margin-top: 0;
+    }
+
+    }
+  }
