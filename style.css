@@ -102,7 +102,8 @@ h1 {
     padding: 0 48px;
     height: 100px;
     align-items: center;
-    backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px) brightness(100%);
+    -webkit-backdrop-filter: blur(20px) brightness(100%);
     font-family: 'Elza', sans-serif;
     font-weight: 300;
     color: #333;
