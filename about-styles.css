@@ -128,6 +128,7 @@ h5 {
       padding: 16px;
       margin-bottom: 50px;
       max-width: 80vw;
+      gap: 16px;
     }
     .landing p, h1{
       max-width: 350px;
