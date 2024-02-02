@@ -327,7 +327,7 @@ footer {
   
   .footer-links a {
     color: #FFF;
-    font-family: 'Elza';
+    font-family: 'Elza', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
