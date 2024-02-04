@@ -237,7 +237,7 @@ h1 {
   padding: 12px 30px;
   border-radius: 8px;
   transition: background-color 0.5s ease;
-  font-family: 'Elza';
+  font-family: 'Elza', sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: #333;
